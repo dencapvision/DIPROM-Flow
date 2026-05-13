@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sarabun), system-ui, sans-serif;
+  --font-display: var(--font-prompt), system-ui, sans-serif;
+  
+  --color-brand-blue: #1A2B48;
+  --color-brand-gold: #D4AF37;
+  --color-brand-green: #8DAA91;
+  --color-brand-cream: #FAF7F2;
+  --color-brand-yellow: #FFF9E6;
+}
+
+@layer base {
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-prompt);
+  }
+}
+
+.markdown-body h1 {
+  @apply text-3xl font-bold mb-4 text-brand-blue;
+}
+
+.markdown-body p {
+  @apply mb-4 leading-relaxed;
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
