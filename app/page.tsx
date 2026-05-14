@@ -312,6 +312,18 @@ const STAGES = [
                 title="3.2 — Packaging Concept" 
                 content={`ช่วยออกแบบแนวคิดบรรจุภัณฑ์สำหรับสินค้า [ชื่อ] ที่: - สื่อถึงอัตลักษณ์ [ชุมชน] - เหมาะกับกลุ่มลูกค้า [ระบุ] - วัสดุที่ใช้ได้: [ระเขุ] - ต้องมีองค์ประกอบ: [โลโก้/QR Code] ขอ 3 แนวคิดออกแบบ พร้อมชื่อ Concept`}
               />
+              <PromptCard 
+                title="3.4 — Sketch to 3D Prototype (System Instructions)" 
+                content={`You are an expert 3D Industrial Designer. Your task is to analyze the provided hand-drawn sketch and transform it into a professional 3D CAD visualization reference. 
+
+1. Identify core product architecture (shapes, proportions, scale). 
+2. Interpret material textures based on cultural heritage (e.g., polished lacquerware, hand-woven fiber, teak wood). 
+3. Reconstruct the object in a 3-quarter view with professional studio lighting. 
+4. Output a high-fidelity 3D-realistic render that highlights both craftsmanship and modern luxury. 
+
+Constraints: Ensure the final output maintains the 'soul' of the local wisdom provided. Handle the transformation with extreme attention to surface details (textures, grain, imperfections that signify 'handmade').`}
+                tip="ใช้ Prompt นี้เป็น System Instruction ใน AI ที่รองรับการอ่านภาพ (Multi-modal) เพื่อเปลี่ยนรูปถ่ายลายเส้นให้เป็นงานพรีเมียม"
+              />
             </div>
             <div className="space-y-8">
                <div className="aspect-video bg-gray-100 rounded-2xl border-4 border-white shadow-xl flex items-center justify-center relative overflow-hidden group">
